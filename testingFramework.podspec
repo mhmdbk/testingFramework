@@ -7,16 +7,16 @@ Pod::Spec.new do |spec|
   spec.summary      = "A short description of testingFramework."
   
   spec.description  = <<-DESC
+This CocoaPods library helps you perform calculation.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/testingFramework"
-  
-  spec.license      = "MIT (example)"
-  spec.author             = { "mohamad.barek" => "mohamad.barek@ideatolife.me" }
+  spec.homepage     = "https://github.com/mhmdbk/testingPod" 
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author             = { "mhmdbk" => "moodee_barek@hotmail.com" }
 
   spec.source       = { :git => "https://github.com/mhmdbk/testingPod.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-  
+  spec.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
+
+
 end
