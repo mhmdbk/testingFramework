@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EEBF389F2714355C0003ED01 /* TestingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBF389D2714355C0003ED01 /* TestingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEBF38A6271435900003ED01 /* ViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF38A5271435900003ED01 /* ViewController + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEBF389A2714355C0003ED01 /* TestingFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestingFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBF389D2714355C0003ED01 /* TestingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingFramework.h; sourceTree = "<group>"; };
 		EEBF389E2714355C0003ED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBF38A5271435900003ED01 /* ViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				EEBF389D2714355C0003ED01 /* TestingFramework.h */,
 				EEBF389E2714355C0003ED01 /* Info.plist */,
+				EEBF38A5271435900003ED01 /* ViewController + Extensions.swift */,
 			);
 			path = TestingFramework;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					EEBF38992714355C0003ED01 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBF38A6271435900003ED01 /* ViewController + Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		EEBF38A32714355C0003ED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = barek.test.TestingFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		EEBF38A42714355C0003ED01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
